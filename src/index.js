@@ -19,21 +19,29 @@ const App = () => {
 
   return (
     <>
-      <video
-        className={styles.fixed}
-        autoPlay
-        playsInline
-        muted
-        ref={videoRef}
-        width="600"
-        height="500"
-      />
-      <canvas
-        className={styles.fixed}
-        ref={canvasRef}
-        width="600"
-        height="500"
-      />
+      <div>
+        <h5 className={styles.headerContainer}>Book and Shoe Finder</h5>
+      </div>
+      <div className={styles.container}>
+
+        <div className={styles.wrapper}>
+          <video
+            className={styles.fixed}
+            autoPlay
+            playsInline
+            muted
+            ref={videoRef}
+            width="600"
+            height="500"
+          />
+          <canvas
+            className={styles.fixed}
+            ref={canvasRef}
+            width="600"
+            height="500"
+          />
+        </div>
+      </div>
     </>
   )
 }
